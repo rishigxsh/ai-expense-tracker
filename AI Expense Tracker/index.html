@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinSight - Expense Tracker</title>
+    <script>
+      // FORCE LIGHT MODE - runs before anything else
+      (function() {
+        console.log('🚀 Pre-load theme script running...');
+        
+        // Remove dark class immediately
+        document.documentElement.classList.remove('dark');
+        
+        // Force light mode in localStorage
+        localStorage.setItem('finsight-theme', 'light');
+        
+        console.log('✅ Forced light mode before React loads');
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
