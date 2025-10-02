@@ -147,8 +147,157 @@ function Features() {
           ))}
         </div>
 
+        {/* AI Features Section */}
+        <div className="mt-24 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="text-center mb-12">
+            <div className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold mb-4 shadow-lg">
+              ✨ AI-POWERED
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+              Intelligent Financial Assistant
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              FinSight leverages cutting-edge AI algorithms to transform your expense data into actionable insights.
+              Here's how our AI technology works for you:
+            </p>
+          </div>
+
+          {/* AI Feature Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Auto-Categorization */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-3xl p-8 border-2 border-blue-200 dark:border-blue-700 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg">
+                🏷️
+              </div>
+              
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                Smart Auto-Categorization
+              </h3>
+              
+              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                Our AI automatically categorizes your expenses using intelligent keyword pattern matching.
+              </p>
+              
+              <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-start space-x-2">
+                  <span className="text-blue-600 dark:text-blue-400 mt-0.5">▸</span>
+                  <span><strong>Technology:</strong> Keyword-based Pattern Matching Algorithm</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-blue-600 dark:text-blue-400 mt-0.5">▸</span>
+                  <span><strong>Categories:</strong> 7 pre-trained categories (Grocery, Transportation, Entertainment, Utilities, Healthcare, Shopping, Food)</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-blue-600 dark:text-blue-400 mt-0.5">▸</span>
+                  <span><strong>How it works:</strong> Analyzes expense descriptions and matches them against 100+ merchant keywords</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-blue-600 dark:text-blue-400 mt-0.5">▸</span>
+                  <span><strong>Benefit:</strong> Saves time by eliminating manual categorization</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Expense Prediction */}
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-3xl p-8 border-2 border-purple-200 dark:border-purple-700 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-purple-600 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg">
+                🔮
+              </div>
+              
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                Expense Forecasting
+              </h3>
+              
+              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                Predict your future spending with machine learning-powered linear regression analysis.
+              </p>
+              
+              <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-start space-x-2">
+                  <span className="text-purple-600 dark:text-purple-400 mt-0.5">▸</span>
+                  <span><strong>Technology:</strong> Linear Regression (Least Squares Method)</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-purple-600 dark:text-purple-400 mt-0.5">▸</span>
+                  <span><strong>Metrics:</strong> Calculates R² (goodness of fit) and confidence levels</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-purple-600 dark:text-purple-400 mt-0.5">▸</span>
+                  <span><strong>How it works:</strong> Groups expenses by month, identifies spending trends, and extrapolates future values</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-purple-600 dark:text-purple-400 mt-0.5">▸</span>
+                  <span><strong>Confidence Levels:</strong> High (3+ months, R² > 0.7), Medium (2+ months, R² > 0.3), Low (limited data)</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-purple-600 dark:text-purple-400 mt-0.5">▸</span>
+                  <span><strong>Benefit:</strong> Plan ahead and avoid budget surprises</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Personalized Recommendations */}
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-800/20 rounded-3xl p-8 border-2 border-pink-200 dark:border-pink-700 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+              <div className="bg-pink-600 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-lg">
+                💡
+              </div>
+              
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+                Smart Recommendations
+              </h3>
+              
+              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                Get personalized financial advice based on your unique spending patterns and budget goals.
+              </p>
+              
+              <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <div className="flex items-start space-x-2">
+                  <span className="text-pink-600 dark:text-pink-400 mt-0.5">▸</span>
+                  <span><strong>Technology:</strong> Behavioral Pattern Analysis & Rule-Based AI</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-pink-600 dark:text-pink-400 mt-0.5">▸</span>
+                  <span><strong>Analysis Types:</strong> Budget compliance, category dominance, month-over-month trends</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-pink-600 dark:text-pink-400 mt-0.5">▸</span>
+                  <span><strong>How it works:</strong> Analyzes spending distribution, compares against budget limits, and identifies concerning patterns</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-pink-600 dark:text-pink-400 mt-0.5">▸</span>
+                  <span><strong>Recommendations:</strong> Budget warnings, category balance suggestions, spending trend alerts</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-pink-600 dark:text-pink-400 mt-0.5">▸</span>
+                  <span><strong>Benefit:</strong> Proactive financial guidance tailored to your habits</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* AI Technology Stack Info */}
+          <div className="mt-12 bg-white dark:bg-gray-800 rounded-3xl p-8 lg:p-12 border border-gray-200 dark:border-gray-700 shadow-xl">
+            <div className="flex items-start space-x-4">
+              <div className="bg-gradient-to-br from-blue-500 to-purple-600 w-12 h-12 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
+                🧠
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Why Our AI Approach?
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  We've implemented lightweight, efficient AI algorithms that run entirely in your browser—no data sent to third-party AI services. 
+                  This means <strong>faster responses</strong>, <strong>complete privacy</strong>, and <strong>no additional costs</strong>. 
+                  Our keyword-based categorization achieves high accuracy for common merchants, while linear regression provides reliable predictions 
+                  without the complexity of deep learning models. The result? Intelligent features that work instantly, even offline.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* CTA Section */}
-        <div className="mt-20 text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 lg:p-16 shadow-2xl animate-fade-in" style={{ animationDelay: '0.6s' }}>
+        <div className="mt-20 text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 lg:p-16 shadow-2xl animate-fade-in" style={{ animationDelay: '1s' }}>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Start your smarter spending journey today.
           </h2>
