@@ -348,6 +348,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
+- Website: [https://ai-expense-tracker-rishigesh-rs-projects.vercel.app/](https://ai-expense-tracker-rishigesh-rs-projects.vercel.app/)
 - LinkedIn: [https://www.linkedin.com/in/rajer03/](https://www.linkedin.com/in/rajer03/)
 - GitHub: [@rishigxsh](https://github.com/rishigxsh)
 
