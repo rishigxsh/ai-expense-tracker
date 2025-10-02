@@ -344,5 +344,5 @@ The combination of keyword-based categorization, linear regression forecasting, 
 
 **Version**: 1.0  
 **Last Updated**: October 2, 2025  
-**Maintained by**: FinSight Team
+**Maintained by**: Rishigesh R
 
