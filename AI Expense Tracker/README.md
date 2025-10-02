@@ -348,9 +348,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- Portfolio: [your-portfolio.com](https://your-portfolio.com)
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- LinkedIn: [https://www.linkedin.com/in/rajer03/](https://www.linkedin.com/in/rajer03/)
+- GitHub: [@rishigxsh](https://github.com/rishigxsh)
 
 ---
 
