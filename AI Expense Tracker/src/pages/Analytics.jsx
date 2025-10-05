@@ -6,6 +6,8 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import Navbar from '../components/Navbar';
 import Loader from '../components/Loader';
 import Footer from '../components/Footer';
+import ExpenseCharts from '../components/ExpenseCharts';
+import SpendingHeatmap from '../components/SpendingHeatmap';
 
 function Analytics() {
   const { currentUser } = useAuth();
@@ -353,6 +355,16 @@ function Analytics() {
                   </ResponsiveContainer>
                 </div>
               )}
+            </div>
+          </div>
+
+          {/* Expense Analytics & Spending Heatmap */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <ExpenseCharts expenses={expenses} loading={loading} />
+            </div>
+            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <SpendingHeatmap expenses={expenses} />
             </div>
           </div>
         </div>

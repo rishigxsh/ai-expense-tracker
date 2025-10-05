@@ -3,8 +3,6 @@ import ExpenseForm from '../components/ExpenseForm';
 import ExpenseSummary from '../components/ExpenseSummary';
 import SpendLimit from '../components/SpendLimit';
 import ExpenseList from '../components/ExpenseList';
-import ExpenseCharts from '../components/ExpenseCharts';
-import SpendingHeatmap from '../components/SpendingHeatmap';
 import ExpensePrediction from '../components/ExpensePrediction';
 import Recommendations from '../components/Recommendations';
 import Login from '../components/Login';
@@ -136,9 +134,9 @@ function Home() {
               <div className="animate-fade-in">
                 <ExpenseForm onAddExpense={handleAddExpense} />
               </div>
-                    <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                      <ExpenseSummary expenses={expenses} limit={limit} loading={loadingExpenses || loadingLimit} />
-                    </div>
+              <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+                <ExpenseSummary expenses={expenses} limit={limit} loading={loadingExpenses || loadingLimit} />
+              </div>
             </div>
 
             {/* Spend Limit Card */}
@@ -146,28 +144,18 @@ function Home() {
               <SpendLimit expenses={expenses} limit={limit} />
             </div>
 
-            {/* Middle Row: Charts */}
+            {/* Recommendations + Expense List */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                <ExpenseCharts expenses={expenses} loading={loadingExpenses} />
-              </div>
-              <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                <SpendingHeatmap expenses={expenses} />
-              </div>
-            </div>
-
-            {/* Bottom Row: Recommendations + Expense List */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div className="animate-fade-in" style={{ animationDelay: '0.5s' }}>
                 <Recommendations expenses={expenses} limit={limit} />
               </div>
-              <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+              <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <ExpenseList expenses={expenses} onDeleteExpense={handleDeleteExpense} loading={loadingExpenses} />
               </div>
             </div>
 
             {/* Full Width: Expense Prediction */}
-            <div className="animate-fade-in" style={{ animationDelay: '0.7s' }}>
+            <div className="animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <ExpensePrediction expenses={expenses} />
             </div>
           </div>
