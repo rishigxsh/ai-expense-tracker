@@ -7,23 +7,23 @@ export function ThemeProvider({ children }) {
 
   // Initialize theme on component mount
   useEffect(() => {
-    // FORCE RESET: Clear any stuck dark theme and start fresh
     const savedTheme = localStorage.getItem('finsight-theme');
     
     console.log('Theme initialization - saved theme:', savedTheme);
     
-    // Force light mode as default
-    document.documentElement.classList.remove('dark');
-    setIsDarkMode(false);
-    localStorage.setItem('finsight-theme', 'light');
-    
-    console.log('Theme forced to LIGHT mode');
-    
-    // Only apply dark if explicitly saved as dark
+    // Apply saved theme or default to light
     if (savedTheme === 'dark') {
       setIsDarkMode(true);
       document.documentElement.classList.add('dark');
       console.log('Applying saved dark theme');
+    } else {
+      // Default to light mode if no preference saved
+      setIsDarkMode(false);
+      document.documentElement.classList.remove('dark');
+      if (!savedTheme) {
+        localStorage.setItem('finsight-theme', 'light');
+      }
+      console.log('Applying light theme');
     }
   }, []);
 
