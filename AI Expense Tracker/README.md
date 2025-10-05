@@ -2,7 +2,9 @@
 
 *Track smarter. Spend wiser.*
 
-A modern, AI-powered expense tracking web application with real-time analytics, smart recommendations, and cloud synchronization. Built with React, Firebase, and Tailwind CSS.
+🔗 [Live Demo](https://finsight.vercel.app) | 💻 [GitHub Repository](https://github.com/rishigxsh/ai-expense-tracker)
+
+FinSight is a fully deployed, AI-powered expense tracking web app that delivers real-time analytics, personalized insights, and a sleek, modern UI. Built with React, Firebase, and Tailwind CSS — now live on Vercel.
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?logo=vite)](https://vitejs.dev/)
@@ -13,17 +15,19 @@ A modern, AI-powered expense tracking web application with real-time analytics, 
 
 ## 📸 Screenshots
 
+*Showcasing the latest UI with final polish and dark mode support*
+
 ### Login Page
-Modern, professional SaaS-style login with Google authentication.
+![Login Page](/docs/screenshots/login.png)
+*Modern, professional SaaS-style login with Google authentication*
 
 ### Dashboard
-Real-time expense tracking with interactive charts and smart insights.
+![Dashboard](/docs/screenshots/dashboard.png)
+*Real-time expense tracking with interactive charts and smart insights*
 
-### Analytics
-Deep dive into spending patterns with monthly breakdowns and category analysis.
-
-### Settings
-Profile management, theme customization, and data control.
+### Analytics Page
+![Analytics Page](/docs/screenshots/analytics.png)
+*Deep dive into spending patterns with monthly breakdowns and category analysis*
 
 ---
 
@@ -157,8 +161,8 @@ finsight/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/finsight.git
-   cd finsight
+   git clone https://github.com/rishigxsh/ai-expense-tracker.git
+   cd ai-expense-tracker
    ```
 
 2. **Install dependencies**
@@ -339,6 +343,30 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
+## 🌟 Project Summary
+
+### Key Achievements
+✅ **Live Deployment** - Successfully deployed and running on Vercel at [finsight.vercel.app](https://finsight.vercel.app)  
+✅ **Firebase Integration** - Real-time database sync with Google OAuth authentication  
+✅ **Mobile Responsive** - Fully optimized for desktop, tablet, and mobile devices  
+✅ **AI-Driven Recommendations** - Smart budget insights and spending pattern analysis  
+✅ **Dark Mode Support** - Seamless theme switching with localStorage persistence  
+✅ **Production Ready** - Optimized build with modern tooling and best practices
+
+### Technologies Used
+- **Frontend**: React 18.2, Vite 5.0, Tailwind CSS 3.4, React Router DOM 7.9
+- **Backend**: Firebase 11.10 (Firestore, Authentication)
+- **Data Visualization**: Recharts 2.15
+- **Deployment**: Vercel (CI/CD enabled)
+- **State Management**: React Context API
+
+### Live Application
+🚀 **[Visit FinSight Live](https://finsight.vercel.app)**
+
+Experience the full power of AI-driven expense tracking with real-time analytics, personalized recommendations, and a beautiful, intuitive interface.
+
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -347,8 +375,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
-- Website: [https://finsightbeta.vercel.app/](https://finsightbeta.vercel.app/)
+**Rishigesh R**
+- Portfolio: [https://finsightbeta.vercel.app/](https://finsightbeta.vercel.app/)
 - LinkedIn: [https://www.linkedin.com/in/rajer03/](https://www.linkedin.com/in/rajer03/)
 - GitHub: [@rishigxsh](https://github.com/rishigxsh)
 
@@ -375,6 +403,6 @@ If you have any questions or run into issues, please open an issue on GitHub or 
 
 Made with ❤️ using React + Firebase + Tailwind CSS
 
-[Live Demo](https://your-app.vercel.app) • [Report Bug](https://github.com/yourusername/finsight/issues) • [Request Feature](https://github.com/yourusername/finsight/issues)
+[Live Demo](https://finsight.vercel.app) • [Report Bug](https://github.com/rishigxsh/ai-expense-tracker/issues) • [Request Feature](https://github.com/rishigxsh/ai-expense-tracker/issues)
 
 </div>
