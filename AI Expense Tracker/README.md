@@ -18,15 +18,15 @@ FinSight is a fully deployed, AI-powered expense tracking web app that delivers 
 *Showcasing the latest UI with final polish and dark mode support*
 
 ### Login Page
-![Login Page](/docs/screenshots/login.png)
+![Login Page](../screenshots/login.png)
 *Modern, professional SaaS-style login with Google authentication*
 
 ### Dashboard
-![Dashboard](/docs/screenshots/dashboard.png)
+![Dashboard](../screenshots/dashboard.png)
 *Real-time expense tracking with interactive charts and smart insights*
 
 ### Analytics Page
-![Analytics Page](/docs/screenshots/analytics.png)
+![Analytics Page](../screenshots/analytics.png)
 *Deep dive into spending patterns with monthly breakdowns and category analysis*
 
 ---
