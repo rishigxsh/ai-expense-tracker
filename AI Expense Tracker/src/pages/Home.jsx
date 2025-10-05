@@ -141,12 +141,10 @@ function Home() {
                     </div>
             </div>
 
-            {/* Spend Limit Card (if limit is set) */}
-            {limit > 0 && (
-              <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                <SpendLimit expenses={expenses} limit={limit} />
-              </div>
-            )}
+            {/* Spend Limit Card */}
+            <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <SpendLimit expenses={expenses} limit={limit} />
+            </div>
 
             {/* Middle Row: Charts */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
