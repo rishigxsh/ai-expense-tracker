@@ -6,6 +6,7 @@ import { auth } from '../services/firebase';
 function Login() {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleGoogleSignIn = async () => {
     setIsLoading(true);
@@ -63,38 +64,107 @@ function Login() {
 
       {/* Navbar */}
       <nav className="relative z-20 px-6 lg:px-12 py-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg">
-              <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span className="text-2xl font-bold text-white">FinSight</span>
             </div>
-            <span className="text-2xl font-bold text-white">FinSight</span>
+            
+            {/* Desktop Nav Links */}
+            <div className="hidden md:flex items-center space-x-8">
+              <button 
+                onClick={() => navigate('/features')}
+                className="text-white/90 hover:text-white font-medium transition-colors"
+              >
+                Features
+              </button>
+              <button 
+                onClick={() => navigate('/about')}
+                className="text-white/90 hover:text-white font-medium transition-colors"
+              >
+                About
+              </button>
+              <button 
+                onClick={handleGoogleSignIn}
+                disabled={isLoading}
+                className="bg-white/90 backdrop-blur-sm text-blue-600 px-5 py-2 rounded-lg font-semibold hover:bg-white transition-colors shadow-lg disabled:opacity-50"
+              >
+                Login
+              </button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {mobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
           </div>
-          
-          {/* Nav Links */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => navigate('/features')}
-              className="text-white/90 hover:text-white font-medium transition-colors"
-            >
-              Features
-            </button>
-            <button 
-              onClick={() => navigate('/about')}
-              className="text-white/90 hover:text-white font-medium transition-colors"
-            >
-              About
-            </button>
-            <button 
-              onClick={handleGoogleSignIn}
-              className="text-white/90 hover:text-white font-medium transition-colors"
-            >
-              Login
-            </button>
-          </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden mt-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 overflow-hidden">
+              <div className="px-4 py-3 space-y-2">
+                <button 
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    navigate('/features');
+                  }}
+                  className="block w-full text-left px-4 py-3 text-white/90 hover:bg-white/10 rounded-lg font-medium transition-colors"
+                >
+                  Features
+                </button>
+                <button 
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    navigate('/about');
+                  }}
+                  className="block w-full text-left px-4 py-3 text-white/90 hover:bg-white/10 rounded-lg font-medium transition-colors"
+                >
+                  About
+                </button>
+                <button 
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    handleGoogleSignIn();
+                  }}
+                  disabled={isLoading}
+                  className="block w-full text-left px-4 py-3 bg-white/90 backdrop-blur-sm text-blue-600 hover:bg-white rounded-lg font-semibold transition-colors shadow-lg disabled:opacity-50"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
