@@ -2,7 +2,7 @@
 
 *Track smarter. Spend wiser.*
 
-🔗 [Live Demo](https://finsight.vercel.app) | 💻 [GitHub Repository](https://github.com/rishigxsh/ai-expense-tracker)
+🔗 [Live Demo](https://finsightbeta.vercel.app/) | 💻 [GitHub Repository](https://github.com/rishigxsh/ai-expense-tracker)
 
 FinSight is a fully deployed, AI-powered expense tracking web app that delivers real-time analytics, personalized insights, and a sleek, modern UI. Built with React, Firebase, and Tailwind CSS — now live on Vercel.
 
