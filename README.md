@@ -367,12 +367,6 @@ Experience the full power of AI-driven expense tracking with real-time analytics
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 👨‍💻 Author
 
 **Rishigesh R**
