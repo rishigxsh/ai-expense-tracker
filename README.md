@@ -346,7 +346,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 🌟 Project Summary
 
 ### Key Achievements
-✅ **Live Deployment** - Successfully deployed and running on Vercel at [finsight.vercel.app](https://finsight.vercel.app)  
+✅ **Live Deployment** - Successfully deployed and running on Vercel at [https://finsightbeta.vercel.app/](https://finsightbeta.vercel.app/)  
 ✅ **Firebase Integration** - Real-time database sync with Google OAuth authentication  
 ✅ **Mobile Responsive** - Fully optimized for desktop, tablet, and mobile devices  
 ✅ **AI-Driven Recommendations** - Smart budget insights and spending pattern analysis  
@@ -361,7 +361,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - **State Management**: React Context API
 
 ### Live Application
-🚀 **[Visit FinSight Live](https://finsight.vercel.app)**
+🚀 **[Visit FinSight Live](https://finsightbeta.vercel.app/)**
 
 Experience the full power of AI-driven expense tracking with real-time analytics, personalized recommendations, and a beautiful, intuitive interface.
 
