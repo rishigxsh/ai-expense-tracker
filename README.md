@@ -23,13 +23,6 @@
 
 ---
 
-## Live Demo
-
-**[finsightbeta.vercel.app](https://finsightbeta.vercel.app/)**
-
-Sign in with Google to try the full app — add expenses, view analytics, set a monthly budget, and see the AI recommendations update in real time.
-
----
 
 ## Screenshots
 
