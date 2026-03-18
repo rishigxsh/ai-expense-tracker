@@ -204,14 +204,6 @@ The app has two global state concerns: auth and theme. Both are simple and rarel
 
 ---
 
-## Author
-
-**Rishigesh R**
-- LinkedIn: [linkedin.com/in/rajer03](https://www.linkedin.com/in/rajer03/)
-- GitHub: [@rishigxsh](https://github.com/rishigxsh)
-
----
-
 ## License
 
 MIT — free to use, fork, and build on.
